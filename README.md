@@ -1,65 +1,261 @@
-# ✔️ Flutter to do App "To Do List"
+# 🚀 Taskly Pro
 
-A Flutter app based on the design of the To Do App, created by *Rudi Hartono*, see more on: [Uplabs](https://www.uplabs.com/posts/to-do-list-app-freebie-kit).
+> **AI-powered personal productivity and task management app built with Flutter.**
 
-## Getting Started 🚀
+Taskly Pro is a modern productivity application designed to help users organize tasks, manage notes, plan their day, protect personal data, and improve productivity with AI-assisted features.
 
-```shell
-- Clone the repo
-- Install the dependicies
-- Run it
+---
+
+## ✨ Features
+
+### ✅ Task Management
+- Create, edit, complete and delete tasks
+- Task priority management
+- Due dates and reminders
+- Active, archived and trashed tasks
+- Restore and permanent deletion
+- Undo support for important actions
+
+### 📝 Advanced Notes
+- Create and manage notes
+- Quick Notes
+- Search and organization
+- Pin, archive and trash support
+- Convert notes into tasks
+- Rich note editing capabilities
+
+### 🤖 AI Productivity Assistant
+- AI productivity dashboard
+- Plan My Day
+- Daily briefing
+- Overdue task analysis
+- Priority suggestions
+- Notes analysis
+- Natural-language productivity commands
+- Quick AI action button
+
+### 📅 Calendar & Reminders
+- Calendar-based task management
+- Task reminders
+- Recurring tasks
+- Notification-aware task workflow
+
+### 📊 Productivity
+- Productivity insights
+- Weekly momentum
+- Smart suggestions
+- Focus and productivity tools
+
+### 🔐 Security & Privacy
+- App Lock
+- Biometric authentication
+- Secure PIN protection
+- Local encrypted data
+- Secure storage for sensitive information
+
+### 🔔 Notifications & Interaction
+- Task notifications
+- Notification sound
+- Vibration / haptic feedback
+- Tap and interaction feedback
+- Dark-mode notification support
+
+### 🌙 Modern UI
+- Material 3 based interface
+- Light and Dark mode
+- Modern cards and visual hierarchy
+- Responsive Flutter UI
+- Clean productivity-focused experience
+
+### 💾 Backup & Restore
+- Local backup and restore
+- JSON-based data backup
+- Tasks, notes, profile and settings backup
+- Validation before restore
+- Safety-oriented restore workflow
+
+---
+
+## 🛠️ Technology Stack
+
+| Technology | Usage |
+|---|---|
+| Flutter | Cross-platform application framework |
+| Dart | Application programming language |
+| Material 3 | UI design system |
+| Google Authentication | User authentication |
+| Google Drive | Cloud backup foundation |
+| Secure Storage | Sensitive data protection |
+| Local Authentication | Biometric / device authentication |
+| Firebase / Google Services | Cloud-service integration |
+
+---
+
+## 🏗️ Project Structure
+
+```text
+lib/
+├── main.dart
+├── home.dart
+├── task.dart
+├── notes.dart
+├── calendar.dart
+├── focus.dart
+├── insights.dart
+├── search.dart
+├── profile.dart
+├── profile_page.dart
+├── pro_page.dart
+├── pro2_dashboard.dart
+├── pro_ai_chat.dart
+├── pro_notes_page.dart
+├── pro21_workflow.dart
+├── security_gate.dart
+├── security_page.dart
+├── security_service.dart
+├── backup_page.dart
+├── backup_service.dart
+├── sync_page.dart
+├── google_drive_sync.dart
+├── notification_service.dart
+└── models.dart
 ```
 
-## Preview and Google Play
+---
 
-The app is based on Rudi's design:
+## 📱 Current Version
 
-![App preview](doc/AppPreviewUplabs.jpg)
+**Taskly Pro 2.5.3**
 
-The result is:
+### 2.5.3 Highlights
+- Modern UI polish
+- Dark / Light mode improvements
+- AI productivity features
+- App security and biometric authentication
+- Local data encryption
+- Notification sound and vibration
+- Tap / click sound and haptic feedback
 
-![App preview](doc/AppPreview.gif)
+---
 
-[![Get it on Google Play](doc/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.interestinate.flutter_todolist)
+## 🚀 Getting Started
 
-## Version history
+### Prerequisites
 
-| Version |       Date         |             Comments             |
-| ------- | ------------------ | -------------------------------- |
-| 1.6     | May 19, 2021 | Migrate to Flutter 2 + Added Subtasks |
-| 1.5     | December 10, 2019 | Changed build from prodcution to test |
-| 1.4     | September 26, 2019 | Published the App on Google Play |
-| 1.3     | September 24, 2019 | Added App-icons for deployment   |
-| 1.2     | September 23, 2019 | Added swipe to delete: ![Swipe to delete](doc/UpdateSwipeToDelete.png) |
-| 1.1     | September 16, 2019 | Set the statusbar to transparent: ![Transparent statusbar](doc/UpdateTransparentStatusbar.png) |
-| 1.0     | ~September 2019    | Initial release                  |
+Make sure you have:
 
-## Contributing
+- Flutter SDK
+- Dart SDK
+- Android Studio
+- Android SDK
+- Android emulator or physical Android device
 
-Feel welcome and free to submit issues, pull requests and features to this repo.
+### Install
 
-## Support me
+Clone the repository:
 
-I really like to make as much (free) beautiful Flutter apps, so you get inspired!
-Hence you can support me by:
+```bash
+git clone https://github.com/mahinwgbd/Taskly-Pro.git
+```
 
-⭐️ this repo if you like it.
+Enter the project:
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/jwalhout?locale.x=nl_NL)
+```bash
+cd Taskly-Pro
+```
 
-Thank you in advanced 👍
+Install dependencies:
 
-## Other Flutter Apps
+```bash
+flutter pub get
+```
 
-There are other example Apps made with flutter, see more on [Interestinate](https://interestinate.com).
+Run the application:
 
-Or the following repo's:
-- An iOS focused Flutter App: [iSubscribe](https://github.com/LiveLikeCounter/Flutter-iSubscribe)
-- A Package Manager App made with Flutter: [Package Manager](https://github.com/LiveLikeCounter/Flutter-Package-Manager)
-- A Food Delivery Flutter App: [Food Delivery](https://github.com/LiveLikeCounter/Flutter-Food-Delivery)
-- A Paypal Redesign made in Flutter: [Paypal Redesign](https://github.com/LiveLikeCounter/Flutter-Paypal-Redesign)
-### V6.0.2
-- Google Sign-In and private Google Drive app-data backup
-- Dynamic productivity ring and motivational messages
-- Expanded profile summary on Home/Profile
-- Meet the developer section
+```bash
+flutter run
+```
+
+---
+
+## 📦 Build APK
+
+### Standard Release APK
+
+```bash
+flutter build apk --release
+```
+
+APK output:
+
+```text
+build/app/outputs/flutter-apk/app-release.apk
+```
+
+### Split APK
+
+```bash
+flutter build apk --release --split-per-abi
+```
+
+For most modern ARM64 Android phones:
+
+```text
+build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
+```
+
+---
+
+## 🔒 Security Note
+
+Taskly Pro includes local security and encrypted-data features. Users should still maintain their own backups and protect their device credentials.
+
+Do not commit private API keys, signing keys, service-account credentials, or other secrets to the repository.
+
+---
+
+## 🗺️ Roadmap
+
+### 2.6 — Cloud Sync
+- Cloud synchronization
+- Google Drive integration improvements
+- Automatic backup
+- Restore workflow
+- Sync safety and conflict handling
+
+### Future
+- Advanced AI productivity automation
+- Smarter routines
+- Cross-device productivity
+- Widgets and quick actions
+- Advanced productivity analytics
+
+---
+
+## 👨‍💻 Developer
+
+**Mahin Mahbub Ullah**
+
+📧 **Email:** mahinwgbd@gmail.com
+
+🌐 **Portfolio:** https://mahindev.netlify.app/
+
+---
+
+## 📌 Repository
+
+GitHub:
+
+https://github.com/mahinwgbd/Taskly-Pro
+
+---
+
+## 📄 License
+
+This project is maintained as a personal software project by Mahin Mahbub Ullah.
+
+---
+
+<p align="center">
+  Made with ❤️ using Flutter
+</p>
