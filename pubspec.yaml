@@ -1,0 +1,67 @@
+name: flutter_todolist
+description: A new Flutter project.
+publish_to: none
+
+version: 2.5.0+26
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  shared_preferences: ^2.5.3
+  image_picker: ^1.1.2
+  path_provider: ^2.1.5
+  google_sign_in: ^7.2.0
+  googleapis: ^17.0.0
+  extension_google_sign_in_as_googleapis_auth: ^3.0.0
+  flutter_quill: ^11.5.1
+  flutter_quill_extensions: ^11.0.0
+  speech_to_text: ^7.4.0
+  file_picker: ^12.2.0
+  flutter_local_notifications: ^22.3.1
+  timezone: ^0.11.1
+  flutter_timezone: ^5.1.0
+  crypto: ^3.0.6
+  encrypt: ^5.0.3
+  flutter_secure_storage: ^11.2.0
+  local_auth: ^3.0.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  flutter_launcher_icons: ^0.9.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  # Runtime assets only. The launcher icon is packaged by flutter_launcher_icons
+  # and does not need to be bundled again inside the Flutter asset bundle.
+  assets:
+    - assets/images/
+    - assets/profile/
+
+  fonts:
+    - family: rubik
+      fonts:
+        - asset: assets/fonts/Rubik/Rubik-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Rubik/Rubik-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Rubik/Rubik-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Rubik/Rubik-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Rubik/Rubik-Black.ttf
+          weight: 900
